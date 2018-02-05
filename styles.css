@@ -13,12 +13,8 @@ body {
    font-weight: 300;
 }
 
-.title {
-   margin: 75px 0;
-}
-
 .pricing-table-container {
-   margin: 0 auto;
+   margin: 15% auto 10%;
    padding: 0 2%;
 }
 
@@ -123,8 +119,6 @@ button:active {
    transform: translateY(2px);
 }
 
-
-
 /* ENLARGING MIDDLE TABLE */
 
 .gold {
@@ -164,22 +158,55 @@ button:active {
    -2px 0px 10px #d2d2d2;
 }
 
+/* BOTTOM NAVIGATION */
+
+.navigation {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+   height: 200px;
+   margin: 0 auto;
+
+   font-size: 2rem;
+}
+
+a {
+   text-decoration: none;
+   opacity: 0.7;
+   color: #ebebeb;
+}
+
+.navigation a:nth-child(2) {
+   padding: 0 30px;
+}
+
+.navigation a:hover {
+   cursor: pointer;
+
+   color: #bbb9bb;
+}
+
+.navigation a:active {
+   transform: translateY(1px);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 980px) {
-
    .pricing-table {
       display: block;
 
       margin: 30px auto;
    }
-
    .gold {
       -webkit-transform: none;
       transform: none;
    }
-
    .title {
       padding-left: 45px;
+   }
+   .navigation {
+      height: 100px;
    }
 }
